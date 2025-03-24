@@ -1,0 +1,174 @@
+/**
+ * Import the Nerdfonts icon font.
+ * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
+ */
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+i {
+  color: rgb(115 130 175 / 95%);
+  margin-right: 7px;
+}
+
+html {
+  line-height: 1;
+}
+
+body {
+  color: rgb(255 255 255 / 90%);
+  font-family: system-ui, monospace;
+  font-size: 12px;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+div,
+span,
+p {
+  cursor: default;
+  user-select: none;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  background: transparent;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: center;
+  background: #29283b;
+  border: 2px #3b3852;
+  border-radius: 10px;
+  float: right;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.left {
+  width: fit-content;
+  color: #bc9766;
+}
+
+.center {
+  justify-self: center;
+  color: #9ccfd8;
+}
+
+.right {
+  justify-self: end;
+}
+
+.logo,
+.binding-mode,
+.tiling-direction,
+.paused-button,
+.network,
+.memory,
+.cpu,
+.battery {
+  margin-right: 20px;
+}
+
+.workspaces {
+  display: flex;
+  align-items: center;
+}
+
+.workspace {
+  background: transparent;
+  margin-right: 4px;
+  color: grey;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &.displayed {
+    background: transparent;
+    color: grey;
+  }
+
+  &.focused,
+  &:hover {
+    background: transparent;
+    color: white;
+  }
+}
+
+.binding-mode,
+.tiling-direction,
+.paused-button {
+  background: rgb(255 255 255 / 15%);
+  color: rgb(255 255 255 / 90%);
+  border-radius: 2px;
+  line-height: 1;
+  border: 0;
+  cursor: pointer;
+}
+
+.binding-mode {
+  margin-right: 4px;
+}
+
+.cpu .high-usage {
+  color: #900029;
+}
+
+.battery {
+  position: relative;
+}
+
+.battery .charging-icon {
+  position: absolute;
+  font-size: 7px;
+  left: -8px;
+  top: 3px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1;
+  margin: 0;
+  font-weight: 500;
+}
+
+.test-box {
+  background: #29283b;
+  border: 2px #3b3852;
+  border-radius: 10px;
+  color: rgb(255 255 255 / 90%);
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nf-fae-chip {
+  color: #dc6e8e;
+}
+
+.nf-oct-cpu {
+  color: #9ccfd8;
+}

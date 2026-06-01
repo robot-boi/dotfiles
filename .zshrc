@@ -76,9 +76,6 @@ else
   export EDITOR='nvim'
 fi
 
-# Tools
-eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
 # eval "$(zoxide init zsh)"
 # eval "$(direnv hook zsh)"
 
@@ -123,6 +120,9 @@ export NVM_DIR="$HOME/.nvm"
 # cargo environment setup
 export PATH="$HOME/.cargo/bin:$PATH"
 
-
 # opencode
 export PATH=/home/abu/.opencode/bin:$PATH
+
+# Tools
+eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"
